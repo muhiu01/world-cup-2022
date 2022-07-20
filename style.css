@@ -1,0 +1,173 @@
+/* __________COMMON STYLES__________*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ________TOP BANNER STYLES__________ */
+.top-banner {
+    background-color: #161616;
+    Width: 1321px;
+    Height: 646px;
+    border-radius: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.slogan {
+    color: #ffffff;
+    width: 531px;
+    height: 424px;
+}
+
+.slogan h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.slogan p {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.live-button {
+    background-color: #DD0000;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+
+.poster-boy img {
+    padding-top: 33px;
+    width: 581px;
+    height: 613px;
+}
+
+/* ______ASIDE AND BLOG STYLES_______________*/
+.article-aside-block{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 90%;
+}
+.sidebar{
+    width: 312px;
+    height: 312px;
+    margin-right: 24px;
+    background-color: #161616;
+    float: left;
+    border-radius: 10px;
+}
+.sidebar> div a, aside>a{
+    text-decoration: none;
+    color: #161616;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#ffffff;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+.sidebar> div{
+    margin: 50px 30px;
+}
+.mobile-tab-view a{
+    display:inline-block;
+    margin-right: 30px;
+    border: 1px solid rgba(197, 186, 186, 0.678);
+    width:200px;
+}
+.sidebar a.active {
+    background-color: #DD0000;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color:#DD0000 ;
+    color: white;
+  }
+.mobile-tab-view a.active {
+    background-color: #DD0000;
+    color: white;
+  }
+  
+.mobile-tab-view a:hover:not(.active) {
+    background-color:#DD0000 ;
+    color: white;
+  }
+  
+main{
+    margin-bottom: 130px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.blog{
+    border: 1px solid #80808093;
+    border-radius: 10px;
+}
+.blog-description{
+    margin-left: 20px;
+}
+span{
+    margin-right: 20px;
+}
+footer{
+    background-color: #161616;
+    width: 100%;
+    text-align: center;
+}
+footer h3{
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top: 70px;
+}
+footer hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+.footer-options{
+    padding-bottom:40px;
+}
+.footer-options a{
+    text-decoration: none;
+    color: #B9B9B9;
+    margin-right: 42px;
+}
+.fa-brands{
+    font-size:50px;
+    padding: 15px;
+    margin-right: 15px;
+    }
+@media only screen and (min-width: 600px) {
+    .sidebar {display: none;}
+    .mobile-tab-view{
+        display: block;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .sidebar {display: none;}
+    .mobile-tab-view{display: inline-block;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .sidebar {display:block;}
+    .mobile-tab-view{
+        display: none;
+    }
+  } 
+  
