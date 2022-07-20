@@ -111,46 +111,45 @@ aside>a {
     color: white;
 }
 
+/* ____BLOG ARTICLE STYLE_____ */
 main {
     margin-bottom: 130px;
 }
 
-.blogs {
+.matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 24px;
 }
 
-.blog {
+.match-schedule {
     border: 1px solid #80808093;
     border-radius: 10px;
-}
-
-.blog-description {
-    margin-left: 20px;
-}
-
-span {
-    margin-right: 20px;
-}
-
-/*___VIEW ALL BUTTON STYLES____*/
-.view-all-button {
-    margin-top: 50px;
     text-align: center;
+    width: 312px;
+    height: 242px;
 }
 
-.view-all-button button {
-    background-color: #DD0000;
-    border: 2px solid #DD0000;
-    padding: 5px 10px;
-    border-radius: 5px;
+.match {
+    margin-top: 50px;
 }
 
-.view-all-button button a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 700;
+.playing-country {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.match h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.match p {
+    font-size: 16px;
+    color: #4D4D4D;
+    ;
 }
 
 /*______FOOTER STYLES _________*/
@@ -189,27 +188,7 @@ footer hr {
     margin-right: 15px;
 }
 
-/* FOR SMALL DEVICES */
-@media only screen and (max-width: 600px) {
-    .top-banner {
-        width: 100vh;
-        display: grid;
-        grid-auto-flow: row;
-        margin: auto;
-    }
-
-    .slogan {
-        width: 100%;
-        margin: 10%;
-    }
-
-    .poster-boy img {
-        width: 50%;
-        height: 40%;
-        padding-top: 0px;
-
-    }
-
+@media only screen and (min-width: 600px) {
     .sidebar {
         display: none;
     }
